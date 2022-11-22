@@ -1,0 +1,38 @@
+html {
+    font-family: Verdana, Tahoma, sans-serif
+}
+
+body {
+    background-color: rgb(219, 250, 239)
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Trebuchet MS", Tahoma, sans-serif
+}
+
+section {
+    margin: 0.8em
+}
+
+footer {
+    color: grey;
+    font-size: 0.8em;
+    font-style: italic;
+    text-align: center;
+}
+
+h1 {
+    background-color: white;
+    color: #c60021;
+    padding: 0.8em;
+    text-align: center;
+}
+
+h2,
+h3 {
+    background-color: rgb(49, 185, 138);
+    color: white;
+    padding: 0.3em, 0.8em, 0.3em, 0.8em;
+}
