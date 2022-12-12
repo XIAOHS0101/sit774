@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+      integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/CSS/style5_1.css" />
+    <title>Cookie Delivery Website</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <section id="first">
+        <h1>Homemade Cookies Delivered to Your Door</h1>
+        <p>
+          We delivery boxes of freshly baked cookies to your door. Please fill
+          in the form below to place your order.
+        </p>
+      </section>
+
+      <section id="second">
+        <form>
+          <h2>ORDER FORM</h2>
+          <section class="details">
+            <div>
+              <h3>Contact Details</h3>
+            </div>
+            <div class="form-group row">
+              <label class="col-form-label col-sm-2" for="fullname"
+                >Your name:</label
+              >
+              <div class="col-sm-10">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="fullname"
+                  id="fullname"
+                  placeholder="Firstname Surname"
+                />
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="col-form-label col-sm-2" for="phone_number"
+                >Phone number:</label
+              >
+              <div class="col-sm-10">
+                <input
+                  type="tel"
+                  class="form-control"
+                  name="phone"
+                  id="phone"
+                  placeholder="Number including area code"
+                />
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="col-form-label col-sm-2" for="email">Email:</label>
+              <div class="col-sm-10">
+                <input
+                  type="email"
+                  class="form-control"
+                  name="email"
+                  id="email"
+                  placeholder="Enter email"
+                />
+              </div>
+            </div>
+          </section>
+
+          <section class="details">
+            <div>
+              <h3>Order Details</h3>
+            </div>
+            <div class="btn-group group">
+              <label for="cookietype">Select a cookie type:</label>
+
+               <input type="radio" name="options-outlined" id="chocolate" class="btn-check" autocomplete="off" checked/>
+               <label for="chocolate" class="btn btn-outline-primary">Chocolate</label>
+
+               <input type="radio" name="options-outlined" id="shortbread" class="btn-check" autocomplete="off"/>
+               <label for="shortbread" class="btn btn-outline-primary ">Shortbread</label>
+
+               <input type="radio"name="options-outlined" id="macaron" class="btn-check" autocomplete="off"/>
+               <label for="macaron" class="btn btn-outline-primary">Macaron</label>
+
+               <input type="radio" name="options-outlined" id="gingerbread" class="btn-check" autocomplete="off"/>
+               <label for="gingerbread" class="btn btn-outline-primary">Gingerbread</label>
+          </div>
+
+            <div class="form-group row">
+              <label class="col-form-label col-sm-2" for="box"
+                >Number of boxes:</label
+              >
+              <div class="col-sm-10">
+                <input
+                  type="number"
+                  class="form-control"
+                  name="box"
+                  id="box"
+                  placeholder="1"
+                />
+              </div>
+            </div>
+
+            <div class="form-group row ">
+              <label class="col-form-label col-sm-2" for="option">Optional extra:</label>
+              <div class="col-sm-10">
+              <input
+                type="checkbox"
+                class="my-auto"
+                name="way"
+                id="way1"
+                value="extra choc-chips"
+              />Extra Choc-chips &nbsp;
+              <input
+                type="checkbox"
+                class="my-auto"
+                name="way"
+                id="way2"
+                value="icing sugar"
+              />Icing Sugar &nbsp;
+              <input
+                type="checkbox"
+                class="my-auto"
+                name="way"
+                id="way3"
+                value="almond flakes"
+              />Almond flakes &nbsp;
+              <input
+                type="checkbox"
+                class="my-auto"
+                name="way"
+                id="way4"
+                value="caramel"
+              />Caramel
+            </div>
+          </div>
+          </section>
+
+          <section class="details">
+            <div>
+              <h3>Delivery Details</h3>
+            </div>
+            <div class="form-group row">
+              <label class="col-form-label col-sm-2" for="address"
+                >Delivery Address:</label
+              >
+              <div class="col-sm-10">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="address"
+                  id="address"
+                  placeholder="Enter address here"
+                />
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-form-label col-sm-2" for="date"
+                >Delivery Date:</label
+              >
+              <div class="col-sm-10">
+                <input type="date" class="form-control" name="date" id="data" />
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-form-label col-sm-2" for="deliveryoptions"
+                >Delivery options:</label
+              >
+              <div class="col-sm-10">
+              <select name="deliveryoption" class="form-control">
+                <option value="O" disable selected>
+                  Please select an option...
+                </option>
+                <option value="O1">Option 1</option>
+                <option value="O2">Option 2</option>
+                <option value="O3">Option 3</option>
+                <option value="O4">Option 4</option>
+              </div>
+              </select>
+            </div>
+          </section>
+
+          <div class="form-group row form-check">
+            <div class="offset-sm-2 col-sm-10">
+              <input type="checkbox" class="form-check-input" id="remember" />
+              <label class="form-check-label" for="remember">Remember me</label>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <div class="offset-sm-2 col-sm-10">
+              <button type="reset" class="btn btn-primary">Reset</button>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </div>
+        </form>
+      </section>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js"
+      integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
